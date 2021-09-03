@@ -8,17 +8,6 @@
     tools:context=".activity.RegisterActivity">
 
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:adjustViewBounds="true"
-        android:fontFamily="cursive"
-        android:src="@drawable/undraw_welcome_cats_thqn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -42,26 +31,6 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inputName"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:padding="10dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Username"
-            android:layout_marginTop="10dp"
-            app:startIconTint="@color/blue"
-            app:startIconDrawable="@drawable/ic_baseline_person">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/inputUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -108,6 +77,46 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:inputType="textPassword"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Batch / Branch"
+            android:layout_marginTop="10dp"
+            app:startIconTint="@color/blue"
+            app:startIconDrawable="@drawable/ic_baseline_person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputBatchBranch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Roll No."
+            android:layout_marginTop="10dp"
+            app:startIconTint="@color/blue"
+            app:startIconDrawable="@drawable/ic_baseline_person">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputRoll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
                 android:padding="10dp" />
 
         </com.google.android.material.textfield.TextInputLayout>
