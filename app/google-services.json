@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "231075440669",
+    "project_id": "smart-class-cc286",
+    "storage_bucket": "smart-class-cc286.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231075440669:android:db5e3b5a762cdcf48e3ef4",
+        "android_client_info": {
+          "package_name": "com.hackeraAtHeist.smartclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231075440669-3trg04bkm3m9pcvmejhta8sd2i2saoqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkbWDhOz2SV5jkDLPYcy5RaxqtEQPG0ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231075440669-3trg04bkm3m9pcvmejhta8sd2i2saoqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231075440669:android:62847245d748fc988e3ef4",
+        "android_client_info": {
+          "package_name": "com.hackersAtHeist.smartclass"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231075440669-3trg04bkm3m9pcvmejhta8sd2i2saoqa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDkbWDhOz2SV5jkDLPYcy5RaxqtEQPG0ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231075440669-3trg04bkm3m9pcvmejhta8sd2i2saoqa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
