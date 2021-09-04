@@ -1,17 +1,22 @@
 package com.hackersAtHeist.smartclass.activity;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.dhaval2404.imagepicker.ImagePicker;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -21,16 +26,21 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.hackersAtHeist.smartclass.Constants;
 import com.hackersAtHeist.smartclass.R;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class RegisterActivity extends AppCompatActivity {
 
     private FirebaseAuth mAuth;
     private FirebaseFirestore mStore;
+    FirebaseStorage mStorage;
     private TextInputEditText inputName, inputEmail, inputPassword, inputBatchBranch, inputRoll;
     private Button btnRegister;
     private TextView tvLogin;
@@ -46,6 +56,7 @@ public class RegisterActivity extends AppCompatActivity {
         // initiating
         mAuth = FirebaseAuth.getInstance();
         mStore = FirebaseFirestore.getInstance();
+        mStorage = FirebaseStorage.getInstance();
 
         inputName = findViewById(R.id.inputName);
         inputEmail = findViewById(R.id.inputEmail);
@@ -131,7 +142,6 @@ public class RegisterActivity extends AppCompatActivity {
                             if(task.isSuccessful()){
                                 Toast.makeText(RegisterActivity.this, "Registered successfully \nPlease check your email to verify", Toast.LENGTH_LONG).show();
                                 userId = mAuth.getCurrentUser().getUid();
-
                                 registerUser(userName, userEmail, userBatchBranch, userRoll);
                             }
                         }
@@ -152,6 +162,7 @@ public class RegisterActivity extends AppCompatActivity {
         user.put(Constants.email, Email);
         user.put(Constants.BatchBranch, BatchBranch);
         user.put(Constants.roll, Roll);
+        user.put(Constants.pic, "");
 
         documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override

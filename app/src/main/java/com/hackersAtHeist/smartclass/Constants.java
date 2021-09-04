@@ -6,4 +6,5 @@ public class Constants {
     public final static String email = "Email";
     public final static String BatchBranch = "Batch/Branch";
     public final static String roll = "Roll";
+    public final static String pic = "ProfilePic";
 }

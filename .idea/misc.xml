@@ -6,6 +6,8 @@
         <entry key="app/src/main/res/drawable/ic_baseline_email.xml" value="0.353125" />
         <entry key="app/src/main/res/drawable/ic_baseline_lock.xml" value="0.353125" />
         <entry key="app/src/main/res/drawable/ic_baseline_person.xml" value="0.353125" />
+        <entry key="app/src/main/res/drawable/ic_camera.xml" value="0.353125" />
+        <entry key="app/src/main/res/drawable/profile_bg_circle.xml" value="0.353125" />
         <entry key="app/src/main/res/layout/activity_forgot_password.xml" value="0.321875" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.321875" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.33697916666666666" />
